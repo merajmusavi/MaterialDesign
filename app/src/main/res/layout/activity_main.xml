@@ -7,10 +7,18 @@
     android:id="@+id/fra_main"
     tools:context=".MainActivity">
 
-    <fragment
+    <FrameLayout
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
         android:id="@+id/fragment_main"
-        android:name="com.example.materialdesign.FragmentMain"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:layout_marginBottom="56dp"
+        />
+      <com.google.android.material.bottomnavigation.BottomNavigationView
+          android:id="@+id/btm_nv"
+          android:layout_gravity="bottom"
+          android:layout_width="match_parent"
+          android:layout_height="56dp"
+          app:menu="@menu/main_menu"
+          />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

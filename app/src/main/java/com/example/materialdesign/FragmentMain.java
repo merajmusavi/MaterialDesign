@@ -52,7 +52,9 @@ public class FragmentMain extends Fragment {
                 fragmentTransaction.add(R.id.fra_main,new Detail());
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
+
             }
         });
+
     }
 }
